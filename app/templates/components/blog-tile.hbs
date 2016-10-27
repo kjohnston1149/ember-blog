@@ -1,7 +1,7 @@
-<li>
+<li class="well">
   <h4>{{blog.title}} - by {{blog.author}}</h4>
   <br>
-  <img id="tile-img" src={{blog.image}} alt={{blog.title}}>
+  {{#link-to 'blog' blog.id}}<img id="tile-img" src={{blog.image}} alt={{blog.title}}>{{/link-to}}
   <br>
   {{update-blog blog=blog update="update"}}
   <button class="btn btn-danger" {{action 'delete' blog}}>Delete Entry</button>
