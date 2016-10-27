@@ -3,5 +3,6 @@
   <br>
   <img id="tile-img" src={{blog.image}} alt={{blog.title}}>
   <br>
+  {{update-blog blog=blog update="update"}}
   <button class="btn btn-danger" {{action 'delete' blog}}>Delete Entry</button>
 </li>
