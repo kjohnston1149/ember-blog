@@ -1,5 +1,6 @@
 <li>
   {{blog.title}} - by {{blog.author}}
   <br>
-  <img src={{blog.image}} alt={{blog.title}}>
+  <img id="tile-img" src={{blog.image}} alt={{blog.title}}>
+  <button {{action 'delete' blog}}>Delete Entry</button>
 </li>
