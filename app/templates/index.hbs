@@ -1,1 +1,7 @@
-<p>This is a test to see where index comes out...</p>
+<h2>Here are some blogs</h2>
+
+<ul>
+  {{#each model as |blog|}}
+   {{blog-tile blog=blog}}
+  {{/each}}
+</ul>
